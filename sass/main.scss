@@ -1,0 +1,37 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/base';
+@import './base/section';
+@import './base/container';
+
+@import './components/headline-btn';
+@import './components/logo';
+@import './components/title';
+@import './components/main-hl';
+@import './components/footer-adress';
+@import './components/icon-list';
+@import './components/sub-input';
+@import './components/backdrop.scss';
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/mobile-menu';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/sub-form';
+@import './layout/portfolio-page';
+
+
+.is-hidden {
+    visibility: transparent;
+    opacity: 0;
+    pointer-events: none;
+}
+
+

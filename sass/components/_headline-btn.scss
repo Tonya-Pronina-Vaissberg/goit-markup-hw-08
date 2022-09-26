@@ -1,0 +1,41 @@
+.headline-btn {
+    color: var(--second-bg-color);
+    background-color: var(--accent-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    border: transparent;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover, 
+    &:focus {
+    background-color: #188CE8;
+    }
+
+    }
+
+    @media screen and (max-width:1199px) {
+        .headline-btn__mobile-tablet {
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+    }
+
+    

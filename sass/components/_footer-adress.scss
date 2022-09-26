@@ -1,0 +1,36 @@
+.footer-adress {
+    margin-top: 20px;
+}
+
+.maps {
+color: white;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+transition: color 250ms var(--timing-function);
+
+&:focus,
+&:hover {
+    color: var(--accent-color);
+}
+}
+
+.mail-footer, 
+.phone-footer {
+color: rgba(255, 255, 255, 0.6);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+transition: color 250ms var(--timing-function);
+
+&:focus,
+&:hover {
+    color: var(--accent-color);
+}
+}

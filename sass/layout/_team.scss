@@ -1,0 +1,48 @@
+.main-our-team {
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.team-item {
+    background-color: var(--second-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px;
+
+}
+
+.team-item {
+    flex-basis: calc((100% - 90px)/4);
+
+}
+
+.team-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-name {
+color: var(--header-text-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+line-height: 1.19;
+text-align: center;
+
+margin-bottom: 10px;
+}
+
+.team-position {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+line-height: 1.19;
+text-align: center;
+margin-bottom: 16px;
+}

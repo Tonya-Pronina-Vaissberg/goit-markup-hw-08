@@ -1,0 +1,39 @@
+.clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.clients-item {
+    width: calc((100% - 150px) / 6);
+}
+
+.clients-link {
+display: flex;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+height: 92px;
+
+justify-content: center;
+align-items: center;
+
+transition: border 250ms var(--timing-function);
+
+&:hover, 
+&:focus {
+border: 1px solid var(--accent-color);
+}
+
+}
+
+.clients-link:hover svg, 
+.clients-link:focus svg {
+fill: var(--accent-color);
+}
+
+.clients-icon {
+    fill: rgb(175, 177, 184);
+
+    transition: fill 250ms var(--timing-function);
+}
+

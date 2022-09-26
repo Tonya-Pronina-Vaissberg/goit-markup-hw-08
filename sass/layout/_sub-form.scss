@@ -1,0 +1,11 @@
+.sub-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+}
+
+.sub-svg {
+margin-left: 10px;
+fill: var(--second-bg-color);
+}
