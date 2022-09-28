@@ -16,9 +16,9 @@
         margin-bottom: 9px;
     }
 
-    .benefits-list & {
-        flex-basis: calc((100% - 90px)/4);
-    }
+    // .benefits-list & {
+    //     flex-basis: calc((100% - 90px)/4);
+    // }
 
     .work-photo &:not(:last-child) {
     margin-right: 30px;

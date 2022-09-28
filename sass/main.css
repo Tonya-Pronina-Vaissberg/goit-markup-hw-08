@@ -95,6 +95,8 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -895,8 +897,10 @@ body {
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+  .benefits-list__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -926,9 +930,6 @@ body {
 }
 .footer-adress .item:not(:last-child) {
   margin-bottom: 9px;
-}
-.benefits-list .item {
-  flex-basis: calc((100% - 90px) / 4);
 }
 .work-photo .item:not(:last-child) {
   margin-right: 30px;
