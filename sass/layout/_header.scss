@@ -22,8 +22,8 @@
 }
 
 .open-mobile-menu-btn__icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 16px;
 }
 
 .page-header__container {
@@ -116,7 +116,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         
@@ -145,7 +145,6 @@
 @media  screen and (min-width: 1200px) {
     .contact-list {
         display: flex;
-        align-items: center;;
         margin-left: auto;
     }
 
@@ -153,6 +152,7 @@
         display: flex;
         padding-top: 32px;
         padding-bottom: 32px;
+        font-size: 14px;
     }
 
     .contact-list__item:not(:last-child) {

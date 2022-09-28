@@ -52,9 +52,9 @@
             </ul>
             <ul class="mobile-contact-list">
                 <li class="mobile-contact-list__item"><a class="mobile-contact-list__link--accent-color" href="mailto:info@devstudio.com">
-                info@devstudio.com</a></li>
+                    +38 096 111 11 11</a></li>
                 <li class="mobile-contact-list__item"><a class="mobile-contact-list__link" href="tel:380961111111"> 
-                +38 096 111 11 11</a></li>
+                    info@devstudio.com</a></li>
             </ul>
             <ul class="mobile-social-list">
                 <li class="mobile-social-list__item">Instagram</li>
@@ -115,7 +115,7 @@
             </ul>
            </div>
         </section>
-        <!-- <section class="main-work section">
+        <section class="main-work section">
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
             <ul class="work-photo">
@@ -133,13 +133,30 @@
                 </li>
             </ul>
             </div>
-        </section> -->
-        <!-- <section class="main-our-team section">
+        </section>
+        <section class="main-our-team section">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-item">
-                    <img class="image" src="./photo/1.jpg" alt="Ігор Дем'яненко" width="270">
+                    <picture>
+                        <source
+                          srcset="./photo/team1-l.jpg 1x, ./photo/team1-l@2x.jpg 2x"
+                          media="(min-width: 1200px)"
+                        />
+            
+                        <source
+                          srcset="./photo/team1-m.jpg 1x, ./photo/team1-m@2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                
+                        <source
+                          srcset="./photo/team1-s.jpg 1x, ./photo/team1-s@2x.jpg 2x"
+                          media="(max-width: 767px)"
+                        />
+                
+                        <img class="image" src="./photo/team1-s.jpg" alt="Ігор Дем'яненко">
+                      </picture>
                     <div class="team-block">
                     <h3 class="team-name">Ігор Дем'яненко</h3>
                     <p class="team-position" lang="en">Product Designer</p>
@@ -176,7 +193,24 @@
                     </div>
                 </li>
                 <li class="team-item">
-                    <img class="image" src="./photo/2.jpg" alt="Ольга Рєпіна" width="270">
+                    <picture>
+                        <source
+                          srcset="./photo/team2-l.jpg 1x, ./photo/team2-l@2x.jpg 2x"
+                          media="(min-width: 1200px)"
+                        />
+            
+                        <source
+                          srcset="./photo/team2-m.jpg 1x, ./photo/team2-m@2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                
+                        <source
+                          srcset="./photo/team2-s.jpg 1x, ./photo/team2-s@2x.jpg 2x"
+                          media="(max-width: 767px)"
+                        />
+                
+                        <img class="image" src="./photo/team2-s.jpg" alt="Ольга Рєпіна">
+                      </picture>
                     <div class="team-block">
                     <h3 class="team-name">Ольга Рєпіна</h3>
                     <p class="team-position" lang="en">Frontend Developer</p>
@@ -213,7 +247,24 @@
                     </div>
                 </li>
                 <li class="team-item">
-                    <img class="image" src="./photo/3.jpg" alt="Микола Тарасов" width="270">
+                    <picture>
+                        <source
+                          srcset="./photo/team3-l.jpg 1x, ./photo/team3-l@2x.jpg 2x"
+                          media="(min-width: 1200px)"
+                        />
+            
+                        <source
+                          srcset="./photo/team3-m.jpg 1x, ./photo/team3-m@2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                
+                        <source
+                          srcset="./photo/team3-s.jpg 1x, ./photo/team3-s@2x.jpg 2x"
+                          media="(max-width: 767px)"
+                        />
+                
+                        <img class="image" src="./photo/team3-s.jpg" alt="Микола Тарасов">
+                      </picture>
                    <div class="team-block">
                     <h3 class="team-name">Микола Тарасов</h3>
                     <p class="team-position" lang="en">Marketing</p>
@@ -250,7 +301,24 @@
                    </div>
                 </li>
                 <li class="team-item">
-                    <img class="image" src="./photo/4.jpg" alt="Михайло Єрмаков" width="270">
+                    <picture>
+                        <source
+                          srcset="./photo/team4-l.jpg 1x, ./photo/team4-l@2x.jpg 2x"
+                          media="(min-width: 1200px)"
+                        />
+            
+                        <source
+                          srcset="./photo/team4-m.jpg 1x, ./photo/team4-m@2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                
+                        <source
+                          srcset="./photo/team4-s.jpg 1x, ./photo/team4-s@2x.jpg 2x"
+                          media="(max-width: 767px)"
+                        />
+                
+                        <img class="image" src="./photo/team4-s.jpg" alt="Михайло Єрмаков">
+                      </picture>
                    <div class="team-block">
                     <h3 class="team-name">Михайло Єрмаков</h3>
                     <p class="team-position" lang="en">UI Designer</p>
@@ -288,8 +356,8 @@
                 </li>
             </ul>
             </div>
-        </section> -->
-        <!-- <section class="clients section">
+        </section>
+        <section class="clients section">
             <div class="container">
                 <h2 class="title"> Постійні клієнти</h2>
             <ul class="clients-list">
@@ -337,52 +405,54 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="web-footer">
+    <footer class="web-footer">
        <div class="container footer-first-part">
-        <div>
-            <a class="logo" href="">Web<span class="logo-second__theme-dark">Studio</span></a>
-        <address>
-            <ul class="footer-adress">
-                <li class="item"> <a class="maps" href="https://goo.gl/maps/Q8sLgfFyUjqi2Ujr8" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="item"> <a class="mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"> <a class="phone-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-        </div>
-        <div class="footer-sec-part">
-            <h3 class="main-hl hl-footer">Приєднуйтесь</h3>
-            <ul class="icon-list list">
-                <li class="icon-item">
-                    <a href="" class="icon-link footer-icon-link">
-                        <svg aria-label="інстаграм" class="svg-icon footer-icon">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="" class="icon-link footer-icon-link">
-                        <svg aria-label="твітер" class="svg-icon footer-icon">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="" class="icon-link footer-icon-link">
-                        <svg aria-label="фейсбук" class="svg-icon footer-icon">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="" class="icon-link footer-icon-link">
-                        <svg aria-label="лінкедін" class="svg-icon footer-icon">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin-1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+        <div class="ftr-flex-wrapper">
+            <div>
+                <a class="logo" href="">Web<span class="logo-second__theme-dark">Studio</span></a>
+            <address>
+                <ul class="footer-adress">
+                    <li class="item"> <a class="maps" href="https://goo.gl/maps/Q8sLgfFyUjqi2Ujr8" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="item"> <a class="mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"> <a class="phone-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+            </div>
+            <div class="footer-sec-part">
+                <h3 class="main-hl hl-footer">Приєднуйтесь</h3>
+                <ul class="icon-list list">
+                    <li class="icon-item">
+                        <a href="" class="icon-link footer-icon-link">
+                            <svg aria-label="інстаграм" class="svg-icon footer-icon">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="" class="icon-link footer-icon-link">
+                            <svg aria-label="твітер" class="svg-icon footer-icon">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="" class="icon-link footer-icon-link">
+                            <svg aria-label="фейсбук" class="svg-icon footer-icon">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="" class="icon-link footer-icon-link">
+                            <svg aria-label="лінкедін" class="svg-icon footer-icon">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <form class="sub-form">
             <label class="main-hl hl-footer" for="sub-input">Підпишіться на розсилку</label>
@@ -397,7 +467,7 @@
             </div>
         </form>
        </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
            <button type="button" class="modal-close-btn" data-modal-close>

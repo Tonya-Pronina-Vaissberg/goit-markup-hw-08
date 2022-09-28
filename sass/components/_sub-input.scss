@@ -1,11 +1,11 @@
 .sub-input {
-    margin-right: 12px;
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 
     color: rgba(255, 255, 255, 0.6);
 
@@ -31,5 +31,32 @@
     letter-spacing: 0.03em;
     
     color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sub-input {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sub-input-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+}
+
+@media screen and (min-width: 1200px) {
+    .sub-input-btn {
+        display: block;
+        flex-direction: row;
+    } 
+
+    .sub-input {
+        width: 358px;
     }
 }
