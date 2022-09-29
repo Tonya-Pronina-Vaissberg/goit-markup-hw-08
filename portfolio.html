@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
@@ -23,6 +22,11 @@
                   <li class="menu-list__item"> <a class="menu-list__link" href="">Контакти</a></li>
               </ul>
           </nav>
+          <button type="button" class="open-mobile-menu-btn" data-menu-open>
+              <svg class="open-mobile-menu-btn__icon">
+                  <use href="./images/symbol-defs.svg#icon-burger"></use>
+              </svg>
+          </button>
           <ul class="contact-list">
               <li class="contact-list__item"><a class="contact-list__link" href="mailto:info@devstudio.com">
                   <svg class="contact-list__icon" width="16" height="12">
@@ -33,6 +37,32 @@
                   <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a></li>
           </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+          <div class="mobile-menu__container container">
+              <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                  <svg class="mobile-menu__close-icon">
+                      <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+              </button>
+              <ul class="mobile-menu-list">
+                  <li class="mobile-menu-list__item"> <a class="mobile-menu-list__link" href="./index.html">Студія</a></li>
+                  <li class="mobile-menu-list__item"> <a class="mobile-menu-list__link" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="mobile-menu-list__item"> <a class="mobile-menu-list__link" href="">Контакти</a></li>
+              </ul>
+              <ul class="mobile-contact-list">
+                  <li class="mobile-contact-list__item"><a class="mobile-contact-list__link--accent-color" href="mailto:info@devstudio.com">
+                      +38 096 111 11 11</a></li>
+                  <li class="mobile-contact-list__item"><a class="mobile-contact-list__link" href="tel:380961111111"> 
+                      info@devstudio.com</a></li>
+              </ul>
+              <ul class="mobile-social-list">
+                  <li class="mobile-social-list__item">Instagram</li>
+                  <li class="mobile-social-list__item">Twitter</li>
+                  <li class="mobile-social-list__item">Facebook</li>
+                  <li class="mobile-social-list__item">LinkedIn</li>
+              </ul>
+          </div>
         </div>
       </header>
     <main>
@@ -50,7 +80,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo1.jpg" alt="Технокряк" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project1-l.jpg 1x, ./images/project/l/project1-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project1-m.jpg 1x, ./images/project/m/project1-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project1-s.jpg 1x, ./images/project/s/project1-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project1-s.jpg" alt="Технокряк">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block">
@@ -62,7 +109,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo2.jpg" alt="Постер" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project2-l.jpg 1x, ./images/project/l/project2-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project2-m.jpg 1x, ./images/project/m/project2-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project2-s.jpg 1x, ./images/project/s/project2-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project2-s.jpg" alt="Постер">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block"> 
@@ -74,7 +138,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo3.jpg" alt="Ресторан" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project3-l.jpg 1x, ./images/project/l/project3-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project3-m.jpg 1x, ./images/project/m/project3-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project3-s.jpg 1x, ./images/project/s/project3-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project3-s.jpg" alt="Ресторан">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block">
@@ -86,7 +167,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo4.jpg" alt="Навушники" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project4-l.jpg 1x, ./images/project/l/project4-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project4-m.jpg 1x, ./images/project/m/project4-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project4-s.jpg 1x, ./images/project/s/project4-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project4-s.jpg" alt="Навушники">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block">
@@ -98,7 +196,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo5.jpg" alt="Коробки" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project5-l.jpg 1x, ./images/project/l/project5-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project5-m.jpg 1x, ./images/project/m/project5-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project5-s.jpg 1x, ./images/project/s/project5-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project5-s.jpg" alt="Коробки">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                        <div class="post-block">
@@ -110,7 +225,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo6.jpg" alt="Монітор" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project6-l.jpg 1x, ./images/project/l/project6-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project6-m.jpg 1x, ./images/project/m/project6-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project6-s.jpg 1x, ./images/project/s/project6-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project6-s.jpg" alt="Монітор">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                         <div class="post-block">
@@ -122,7 +254,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo7.jpg" alt="Журнал" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project7-l.jpg 1x, ./images/project/l/project7-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project7-m.jpg 1x, ./images/project/m/project7-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project7-s.jpg 1x, ./images/project/s/project7-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project7-s.jpg" alt="Журнал">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block">
@@ -134,7 +283,24 @@
                 <li class="post-item">
                     <a class="post-link" href="">
                         <div class="overlay-post">
-                            <img class="image" src="./images/photo8.jpg" alt="Бірка" width="370">
+                            <picture>
+                                <source
+                                  srcset="./images/project/l/project8-l.jpg 1x, ./images/project/l/project8-l@2x.jpg 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                    
+                                <source
+                                  srcset="./images/project/m/project8-m.jpg 1x, ./images/project/m/project8-m@2x.jpg 2x"
+                                  media="(min-width: 768px)"
+                                />
+                        
+                                <source
+                                  srcset="./images/project/s/project8-s.jpg 1x, ./images/project/s/project8-s@2x.jpg 2x"
+                                  media="(max-width: 767px)"
+                                />
+                        
+                                <img class="image" src="./images/project/s/project8-s.jpg" alt="Бірка">
+                              </picture>
                         <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                     <div class="post-block">
@@ -146,7 +312,24 @@
                 <li class="post-item">
                    <a class="post-link" href="">
                     <div class="overlay-post">
-                        <img class="image" src="./images/photo9.jpg" alt="Додаток" width="370">
+                        <picture>
+                            <source
+                              srcset="./images/project/l/project9-l.jpg 1x, ./images/project/l/project9-l@2x.jpg 2x"
+                              media="(min-width: 1200px)"
+                            />
+                
+                            <source
+                              srcset="./images/project/m/project9-m.jpg 1x, ./images/project/m/project9-m@2x.jpg 2x"
+                              media="(min-width: 768px)"
+                            />
+                    
+                            <source
+                              srcset="./images/project/s/project9-s.jpg 1x, ./images/project/s/project9-s@2x.jpg 2x"
+                              media="(max-width: 767px)"
+                            />
+                    
+                            <img class="image" src="./images/project/s/project9-s.jpg" alt="Додаток">
+                          </picture>
                     <p class="ol-post-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                   <div class="post-block"> 
@@ -161,48 +344,50 @@
     </main>
     <footer class="web-footer">
         <div class="container footer-first-part">
-         <div>
-             <a class="logo" href="">Web<span class="logo-second__theme-dark">Studio</span></a>
-         <address>
-             <ul class="footer-adress">
-                 <li class="item"> <a class="maps" href="https://goo.gl/maps/Q8sLgfFyUjqi2Ujr8" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
-                 <li class="item"> <a class="mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                 <li class="item"> <a class="phone-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
-             </ul>
-         </address>
-         </div>
-         <div class="footer-sec-part">
-             <h3 class="main-hl hl-footer">Приєднуйтесь</h3>
-             <ul class="icon-list list">
-                 <li class="icon-item">
-                     <a href="" class="icon-link footer-icon-link">
-                         <svg aria-label="інстаграм" class="svg-icon footer-icon">
-                             <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram-2"></use>
-                         </svg>
-                     </a>
-                 </li>
-                 <li class="icon-item">
-                     <a href="" class="icon-link footer-icon-link">
-                         <svg aria-label="твітер" class="svg-icon footer-icon">
-                             <use href="../goit-markup-hw-08/images/symbol-defs.svg#twitter"></use>
-                         </svg>
-                     </a>
-                 </li>
-                 <li class="icon-item">
-                     <a href="" class="icon-link footer-icon-link">
-                         <svg aria-label="фейсбук" class="svg-icon footer-icon">
-                             <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook-1"></use>
-                         </svg>
-                     </a>
-                 </li>
-                 <li class="icon-item">
-                     <a href="" class="icon-link footer-icon-link">
-                         <svg aria-label="лінкедін" class="svg-icon footer-icon">
-                             <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin-1"></use>
-                         </svg>
-                     </a>
-                 </li>
-             </ul>
+         <div class="ftr-flex-wrapper">
+             <div>
+                 <a class="logo" href="">Web<span class="logo-second__theme-dark">Studio</span></a>
+             <address>
+                 <ul class="footer-adress">
+                     <li class="item"> <a class="maps" href="https://goo.gl/maps/Q8sLgfFyUjqi2Ujr8" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+                     <li class="item"> <a class="mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                     <li class="item"> <a class="phone-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                 </ul>
+             </address>
+             </div>
+             <div class="footer-sec-part">
+                 <h3 class="main-hl hl-footer">Приєднуйтесь</h3>
+                 <ul class="icon-list list">
+                     <li class="icon-item">
+                         <a href="" class="icon-link footer-icon-link">
+                             <svg aria-label="інстаграм" class="svg-icon footer-icon">
+                                 <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram-2"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="icon-item">
+                         <a href="" class="icon-link footer-icon-link">
+                             <svg aria-label="твітер" class="svg-icon footer-icon">
+                                 <use href="../goit-markup-hw-08/images/symbol-defs.svg#twitter"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="icon-item">
+                         <a href="" class="icon-link footer-icon-link">
+                             <svg aria-label="фейсбук" class="svg-icon footer-icon">
+                                 <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook-1"></use>
+                             </svg>
+                         </a>
+                     </li>
+                     <li class="icon-item">
+                         <a href="" class="icon-link footer-icon-link">
+                             <svg aria-label="лінкедін" class="svg-icon footer-icon">
+                                 <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin-1"></use>
+                             </svg>
+                         </a>
+                     </li>
+                 </ul>
+             </div>
          </div>
          <form class="sub-form">
              <label class="main-hl hl-footer" for="sub-input">Підпишіться на розсилку</label>
@@ -218,5 +403,6 @@
          </form>
         </div>
      </footer>
+     <script src="./js/menu.js"></script>
 </body>
 </html>
