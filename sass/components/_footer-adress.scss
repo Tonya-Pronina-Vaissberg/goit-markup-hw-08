@@ -1,6 +1,12 @@
 .footer-adress {
     margin-top: 20px;
-    margin-bottom: 60px;
+}
+
+@media screen  and (max-width: 1199px) {
+    .footer-logo-adress__wrapper {
+        margin-bottom: 60px;
+    }
+    
 }
 
 .maps {

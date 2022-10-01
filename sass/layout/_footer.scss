@@ -4,12 +4,10 @@
     padding-bottom: 60px;
     }
     
-.footer-first-part {
-    margin-bottom: 60px;
-    }
-    
-.footer-sec-part {
-    margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+    .footer-sec-part {
+        margin-bottom: 60px;
+    }    
 }
 
 .ftr-flex-wrapper {

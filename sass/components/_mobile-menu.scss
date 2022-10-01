@@ -22,6 +22,11 @@
   }
 
 .mobile-menu__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 48px;
@@ -58,7 +63,7 @@
 }
 
 .mobile-menu-list {
-    margin-bottom: 300px;
+    margin-bottom: auto;
 }
 
 .mobile-menu-list__link {
@@ -86,8 +91,8 @@ transition: color 250ms var(--timing-function);
 .mobile-contact-list__link {
 font-style: normal;
 font-weight: 500;
-font-size: 34px;
-line-height: 1.177;
+font-size: 24px;
+line-height: 1.67;
 letter-spacing: 0.02em;
 
 color: var( --primary-text-color);
