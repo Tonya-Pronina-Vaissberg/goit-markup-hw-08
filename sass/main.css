@@ -755,10 +755,6 @@ body.no-scroll {
   height: 60px;
 }
 
-.menu-list__link--underline {
-  color: var(--accent-color);
-}
-
 @media screen and (min-width: 768px) {
   .page-header__container {
     height: 80px;
@@ -797,6 +793,9 @@ body.no-scroll {
     transition: color 250ms var(--timing-function);
   }
   .menu-list__link:focus, .menu-list__link:hover {
+    color: var(--accent-color);
+  }
+  .menu-list__link--underline {
     color: var(--accent-color);
   }
   .menu-list__link--underline::after {
