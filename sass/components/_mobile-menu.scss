@@ -84,6 +84,10 @@ transition: color 250ms var(--timing-function);
     }
 }
 
+.mobile-menu-list__link--current {
+    color: var(--accent-color);
+}
+
 .mobile-contact-list__item:not(:last-child) {
     margin-bottom: 32px;
 }
